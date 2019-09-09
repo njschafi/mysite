@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('blogging.urls')),
     path('login/', LoginView.as_view(template_name='login.html'), name="login"),
     path('logout/', LogoutView.as_view(next_page='/'), name="logout"),
+    #path('comment/' )
     #url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/', include('allauth.urls')),
 ]
